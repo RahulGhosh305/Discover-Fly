@@ -75,3 +75,12 @@ function getInputValue(Seat){
     const SeatCount = parseInt(SeatInput.value);
     return SeatCount;
 }
+
+
+
+//* Booking Handler
+const bookNowBtn = document.getElementById('book-now-btn');
+bookNowBtn.addEventListener('click', function(){
+    document.getElementById('outerContent').style.display = 'none';
+    document.getElementById('modalCustom').style.display = 'block';
+})
